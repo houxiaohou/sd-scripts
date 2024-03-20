@@ -14,5 +14,6 @@ huggingface-hub
 open-clip-torch==2.20.0
 prodigyopt
 rich==13.7.1
+xformers
 # for kohya_ss library
 -e .
