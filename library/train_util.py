@@ -2751,7 +2751,7 @@ def add_optimizer_arguments(parser: argparse.ArgumentParser):
     parser.add_argument(
         "--optimizer_args",
         type=str,
-        default=None,
+        default='decouple=True weight_decay=0.01 d_coef=1 use_bias_correction=True safeguard_warmup=True betas=0.9,0.99',
         nargs="*",
         help='additional arguments for optimizer (like "weight_decay=0.01 betas=0.9,0.999 ...") / オプティマイザの追加引数（例： "weight_decay=0.01 betas=0.9,0.999 ..."）',
     )
