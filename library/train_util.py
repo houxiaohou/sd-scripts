@@ -3580,8 +3580,10 @@ def get_optimizer(args, trainable_params):
 
     # 引数を分解する
     optimizer_kwargs = {}
+    print(args.optimizer_args)
     if args.optimizer_args is not None and len(args.optimizer_args) > 0:
         for arg in args.optimizer_args:
+            print(arg)
             key, value = arg.split("=")
             value = ast.literal_eval(value)
 
